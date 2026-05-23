@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudyBridge</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <nav>
+        <h1>StudyBridge</h1>
+
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="planner.html">Planner</a></li>
+            <li><a href="tasks.html">Tasks</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="reminders.html">Reminders</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="help.html">Help</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="page-banner">
+    <h1>Assignment Tracker</h1>
+    <p>Stay on top of deadlines, priorities and academic progress.</p>
+</section>
+
+<main class="tasks-main">
+    <section class="tasks-overview">
+        <h2>Assignments</h2>
+        <div class="tasks-controls">
+            <label for="sort">Sort by:</label>
+            <select id="sort">
+                <option value="priority">Priority</option>
+                <option value="due">Due Date</option>
+                <option value="progress">Progress</option>
+            </select>
+            <button id="add-assignment">+ Add Assignment</button>
+        </div>
+
+        <ul class="assignments-list">
+            <li class="assignment">
+                <div class="assignment-header">
+                    <h3>Research Paper - HCIN6122</h3>
+                    <span class="priority high">High</span>
+                </div>
+                <p class="due">Due: <time datetime="2026-05-28">May 28, 2026</time></p>
+                <div class="progress">
+                    <div class="progress-bar" style="width: 45%;">45%</div>
+                </div>
+            </li>
+
+            <li class="assignment">
+                <div class="assignment-header">
+                    <h3>Prototype Deliverable</h3>
+                    <span class="priority medium">Medium</span>
+                </div>
+                <p class="due">Due: <time datetime="2026-06-05">June 5, 2026</time></p>
+                <div class="progress">
+                    <div class="progress-bar" style="width: 70%;">70%</div>
+                </div>
+            </li>
+
+            <li class="assignment">
+                <div class="assignment-header">
+                    <h3>Weekly Quiz Prep</h3>
+                    <span class="priority low">Low</span>
+                </div>
+                <p class="due">Due: <time datetime="2026-05-22">May 22, 2026</time></p>
+                <div class="progress">
+                    <div class="progress-bar" style="width: 20%;">20%</div>
+                </div>
+            </li>
+        </ul>
+    </section>
+</main>
+
+<footer>
+    <p>© 2026 StudyBridge | Designed for Students</p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
